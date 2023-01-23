@@ -1,0 +1,115 @@
+
+.wallpaper {
+background-image: url('../images/wallpaper.png');
+height: 96%;
+width: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+.icon:focus {
+    background-color:#0693e3;
+}
+
+
+.desktop-icons {
+    -webkit-touch-callout: none;
+    -ms-touch-select: none;
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 96%;
+    padding: 40px 0 0 0;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 100%;
+}
+
+.icon {
+    display: inline-block;
+    image-rendering: pixelated;
+    touch-action: none;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    padding: 5px;
+}
+
+.icon .icon-graphic {
+    display: block;
+    height: 32px;
+    margin: 0 auto;
+    width: 32px;
+}
+
+.icon .icon-graphic .icon-graphic-img {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+#calculator {
+    background: url('../images/app.gif');
+}
+
+#trash {
+    background: url('../images/trash.gif');
+}
+
+#chat {
+    background: url('../images/message.gif');
+}
+
+.icon .icon-label {
+    display: block;
+    min-width: 80px;
+    text-align: center;
+    width: 100%;
+}
+
+.icon .icon-label .icon-label-title {
+    border: 1px solid transparent;
+    color: #fff;
+    display: inline-block;
+    max-width: 80px;
+    padding: 2px 4px;
+    text-shadow: 1px 1px #111;
+    word-break: break-word;
+}
+
+.icon .icon-graphic .icon-label {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*---------------turha-------------*/
+#calculator-button {
+   
+    
+    background: url('../images/app.gif');
+    background-size: cover;
+    background-position: center;
+    height: 90px;
+    width: 90px;
+   
+   
+    padding: 0;
+    margin: 0x;
+    /* border: none; */
+
+   
+}
