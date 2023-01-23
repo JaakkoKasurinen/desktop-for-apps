@@ -9,9 +9,9 @@ background-size: cover;
 }
 
 
-.icon:focus {
+/* .icon:focus {
     background-color:#0693e3;
-}
+} */
 
 
 .desktop-icons {
@@ -41,12 +41,15 @@ background-size: cover;
     padding: 5px;
 }
 
+
 .icon .icon-graphic {
     display: block;
     height: 32px;
     margin: 0 auto;
     width: 32px;
 }
+
+
 
 .icon .icon-graphic .icon-graphic-img {
     background-position: 50%;
@@ -112,4 +115,64 @@ background-size: cover;
     /* border: none; */
 
    
+}
+
+/*---------------testi-------------*/
+
+.icon-is-active {
+    display: inline-block;
+    image-rendering: pixelated;
+    touch-action: none;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    padding: 5px;
+}
+
+
+.icon-is-active .icon-graphic {
+    display: block;
+    height: 32px;
+    margin: 0 auto;
+    width: 32px;
+    filter: brightness(.7) sepia(100%) hue-rotate(290deg) saturate(4);
+}
+
+
+
+.icon-is-active .icon-graphic .icon-graphic-img {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.icon-is-active .icon-label {
+    display: block;
+    min-width: 80px;
+    text-align: center;
+    width: 100%;
+}
+
+.icon-is-active .icon-label .icon-label-title {
+    display: inline-block;
+    max-width: 80px;
+    padding: 2px 4px;
+    text-shadow: 1px 1px #111;
+    word-break: break-word;
+
+    background-color: #ee749d;
+    border: 1px dotted hsla(0,0%,100%,.4);
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.icon-is-active .icon-graphic .icon-label {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 100%;
+    width: 100%;
 }
