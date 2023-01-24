@@ -3,8 +3,7 @@ import Background from './desktop/Background';
 
 function App() {
     return(
-        <div class="app">
-            
+        <div className="app">
             <Background/>
         </div>
     );
