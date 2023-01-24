@@ -1,10 +1,18 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../css/Menubar.css';
 
 function Menubar() {
 
     const [styleMenu, setStyleMenu] = useState('menu-start');
     const [showStartMenu, setShowStartMenu] = useState(false);
+    const [clock, setClock] = useState();
+
+    useEffect(() => {
+        setInterval(() => {
+            const date = new Date();
+            setClock(date.toLocaleTimeString());
+        }, 1000)
+    }, [])
 
     const MenuStartClicked = () => {
         if (styleMenu == "menu-start")
@@ -122,7 +130,7 @@ function Menubar() {
                             <div className="menu-bar-clock">
                                 <div className="table">
                                     {/* Kellon aika koodilla */}
-                                    <div className="table-cell middle">17:13</div>
+                                    <div className="table-cell middle">{clock}</div>
                                 </div>
                             </div>
                         </div>
