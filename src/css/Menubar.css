@@ -1,9 +1,56 @@
+/* body, html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #111;
+    font-family: MS,Arial,sans-serif;
+    font-size: 8px;
+    font-weight: 400;
+    height: 100%;
+    letter-spacing: 0;
+    line-height: normal;
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+    width: 100%;
+} */
+
+li, ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ul {
+
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+} */
+
+ol, ul {
+    box-sizing: border-box;
+}
+
 * {
     box-sizing: border-box;
     cursor: url(../images/folder.gif),auto!important;
     margin: 0;
     padding: 0;
 }
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
 
 div {
     display: block;
@@ -55,7 +102,7 @@ div {
 
 
 
-/*-------------start menu---------------*/
+/*-------------menu start---------------*/
 
 
 
@@ -181,4 +228,123 @@ div {
     /* height: 100%; */
     height: 31px;
     text-transform: uppercase;
+}
+
+
+/*-------------menu start is active---------------*/
+
+.menu-bar .menu-bar-container .menu-bar-items .menu-bar-item.menu-bar-item-start .menu-start.is-active {
+    border-color: hsla(0,0%,7%,.85) hsla(0,0%,100%,.75) hsla(0,0%,100%,.75) hsla(0,0%,7%,.85);
+    border-style: solid;
+    border-width: 2px;
+}
+
+.menu-bar .menu-bar-container .menu-bar-items .menu-bar-item.menu-bar-item-start .menu-start {
+        border-color: hsla(0,0%,100%,.75) hsla(0,0%,7%,.85) hsla(0,0%,7%,.85) hsla(0,0%,100%,.75);
+        border-style: solid;
+        border-width: 2px;
+        height: 31px;
+        text-align: center;
+        touch-action: manipulation;
+        width: 74px;
+    }
+
+
+/*-------------start menu---------------*/
+
+.menu-bar .start-menu {
+    background-color: #d1d1d1;
+    border-color: hsla(0,0%,100%,.75) hsla(0,0%,7%,.85) hsla(0,0%,7%,.85) hsla(0,0%,100%,.75);
+    border-style: solid;
+    border-width: 2px;
+    bottom: 96%;
+    min-width: 200px;
+    position: absolute;
+}
+
+.menu-bar .start-menu .start-menu-container {
+    display: table;
+    position: relative;
+    width: 100%;
+}
+
+.menu-bar .start-menu .menu-sidebar {
+    background-color: #999;
+    display: table-cell;
+    vertical-align: bottom;
+    width: 35px;
+}
+
+.menu-bar .start-menu .menu-sidebar .menu-sidebar-logo {
+    /* background-image: url(../images/wallpaper.png); */
+    /* background-color: aqua; */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 140px;
+    image-rendering: auto;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    width: 25px;
+}
+
+.menu-bar .start-menu .menu-items {
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.menu-bar .start-menu .menu-items ul {
+    width: 100%;
+}
+
+.menu-bar .start-menu .menu-items ul li {
+    height: 40px;
+    touch-action: manipulation;
+    width: 100%;
+}
+
+.menu-bar .start-menu .menu-items ul li:hover {
+    background-color: #a358d0;
+}
+
+.menu-bar .start-menu .menu-items ul li .menu-item-container {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.menu-bar .start-menu .menu-items ul li .menu-item-container .menu-item-icon {
+    display: table-cell;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+.menu-bar .start-menu .menu-items ul li .menu-item-container .menu-item-icon .menu-item-icon-graphic {
+    background-image: url(../images/app.gif);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+
+.menu-bar .start-menu .menu-items ul li .menu-item-container .label {
+    /* FONTTI */
+    display: table-cell;
+    padding-left: 10px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.menu-bar .start-menu .menu-items ul li.spacer {
+    border-color: hsla(0,0%,7%,.3) hsla(0,0%,100%,.75) hsla(0,0%,100%,.75) hsla(0,0%,7%,.3);
+    border-style: solid;
+    border-width: 1px;
+    height: 1px;
+    padding: 0;
+}
+
+::selection {
+    background: #a358d0;
 }

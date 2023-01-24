@@ -35,31 +35,31 @@ function Shortcuts() {
 
 
             <div onClick={ChangeStyleCalc} className={styleCalc}>
-                <div class="icon-graphic">
-                    <div id='calculator' class="icon-graphic-img"></div>
+                <div className="icon-graphic">
+                    <div id='calculator' className="icon-graphic-img"></div>
                 </div>
-                <div class="icon-label">
-                    <div class="icon-label-title">Calculator</div>
+                <div className="icon-label">
+                    <div className="icon-label-title">Calculator</div>
                 </div>
             </div>
 
 
 
             <div onClick={ChangeStyleChat} className={styleChat}>
-                <div class="icon-graphic">
-                    <div id='chat' class="icon-graphic-img"></div>
+                <div className="icon-graphic">
+                    <div id='chat' className="icon-graphic-img"></div>
                 </div>
-                <div class="icon-label">
-                    <div class="icon-label-title">Chat</div>
+                <div className="icon-label">
+                    <div className="icon-label-title">Chat</div>
                 </div>
             </div>
 
             <div onClick={ChangeStyleTrash} className={styleTrash}>
-                <div class="icon-graphic">
-                    <div id='trash' class="icon-graphic-img"></div>
+                <div className="icon-graphic">
+                    <div id='trash' className="icon-graphic-img"></div>
                 </div>
-                <div class="icon-label">
-                    <div class="icon-label-title">Trash</div>
+                <div className="icon-label">
+                    <div className="icon-label-title">Trash</div>
                 </div>
             </div>
 

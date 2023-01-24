@@ -8,11 +8,7 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 
-
-/* .icon:focus {
-    background-color:#0693e3;
-} */
-
+/*---------------default icon-------------*/
 
 .desktop-icons {
     -webkit-touch-callout: none;
@@ -32,6 +28,8 @@ background-size: cover;
     width: 100%;
 }
 
+
+
 .icon {
     display: inline-block;
     image-rendering: pixelated;
@@ -48,8 +46,6 @@ background-size: cover;
     margin: 0 auto;
     width: 32px;
 }
-
-
 
 .icon .icon-graphic .icon-graphic-img {
     background-position: 50%;
@@ -99,25 +95,7 @@ background-size: cover;
 }
 
 
-/*---------------turha-------------*/
-#calculator-button {
-   
-    
-    background: url('../images/app.gif');
-    background-size: cover;
-    background-position: center;
-    height: 90px;
-    width: 90px;
-   
-   
-    padding: 0;
-    margin: 0x;
-    /* border: none; */
-
-   
-}
-
-/*---------------testi-------------*/
+/*---------------icon-is-active-------------*/
 
 .icon-is-active {
     display: inline-block;

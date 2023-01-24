@@ -4,7 +4,7 @@ import Menubar from './Menubar';
 
 function Background() {
     return(
-        <div class="wallpaper">
+        <div className="wallpaper">
             <Shortcuts/>
             <Menubar/>
         </div>

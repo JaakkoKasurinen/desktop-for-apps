@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+    cursor: url(../images/folder.gif),auto!important;
+    margin: 0;
+    padding: 0;
+}
+
 .app {
     margin: 0;
     padding: 0;
