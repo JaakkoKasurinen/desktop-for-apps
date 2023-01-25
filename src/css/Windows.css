@@ -1,0 +1,58 @@
+.gaos .interface .window {
+    background-color: #d1d1d1;
+    border-color: hsla(0,0%,100%,.75) hsla(0,0%,7%,.85) hsla(0,0%,7%,.85) hsla(0,0%,100%,.75);
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    touch-action: none;
+    user-select: none;
+    width: 280px;
+}
+
+.gaos .interface .window.is-active .window-bar {
+    background-color: #c074df;
+}
+
+.gaos .interface .window .window-bar {
+    background-color: #aaa;
+    height: 24px;
+    padding: 2px 3px;
+    width: 100%;
+}
+
+.gaos .interface .window .window-bar .window-bar-container {
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.gaos .interface .window .window-bar .window-bar-container .window-bar-handle {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    touch-action: none;
+    user-select: none;
+    width: 100%;
+    z-index: 0;
+}
+
+.gaos .interface .window .window-bar .window-bar-container .window-bar-icon {
+    display: table-cell;
+    padding: 0 3px 0 2px;
+    vertical-align: middle;
+}
+
+.gaos .interface .window .window-bar .window-bar-container .window-bar-label {
+    color: #d1d1d1;
+    display: table-cell;
+    padding-left: 3px;
+    vertical-align: middle;
+    width: 100%;
+}

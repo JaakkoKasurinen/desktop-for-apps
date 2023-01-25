@@ -1,10 +1,10 @@
 import './css/App.css';
-import Background from './desktop/Background';
+import Desktop from './desktop/Desktop';
 
 function App() {
     return(
         <div className="app">
-            <Background/>
+            <Desktop/>
         </div>
     );
 }
