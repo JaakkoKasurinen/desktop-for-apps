@@ -1,4 +1,4 @@
-import '../css/Desktop.css';
+import '../css/style.css';
 import Shortcuts from './Shortcuts';
 import Menubar from './Menubar';
 import Windows from './Windows';

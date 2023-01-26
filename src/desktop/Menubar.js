@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import '../css/Menubar.css';
+import '../css/style.css';
 
 function Menubar() {
 

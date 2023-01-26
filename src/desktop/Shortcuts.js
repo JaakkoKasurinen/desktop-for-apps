@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../css/Desktop.css';
+import '../css/style.css';
 
 function Shortcuts() {
 

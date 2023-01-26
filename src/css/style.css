@@ -2,7 +2,7 @@
 
 * {
     box-sizing: border-box;
-    cursor: url(../images/folder.gif),auto!important;
+    cursor: url(../images/folder.gif), auto !important;
     margin: 0;
     padding: 0;
 }
@@ -13,7 +13,7 @@
     height: 100%;
 }
 
-    /* body, html {
+/* body, html {
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
@@ -33,7 +33,14 @@
     width: 100%;
 } */
 
-li, ul {
+body,
+html {
+    font-family: MS,Arial,sans-serif;
+    font-size: 14px;
+}
+
+li,
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -50,16 +57,12 @@ li, ul {
     padding-inline-start: 40px;
 } */
 
-ol, ul {
+ol,
+ul {
     box-sizing: border-box;
 }
 
-* {
-    box-sizing: border-box;
-    cursor: url(../images/folder.gif),auto!important;
-    margin: 0;
-    padding: 0;
-}
+
 
 li {
     display: list-item;
@@ -97,300 +100,321 @@ div {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    }
-    
-    /*---------------default icon-------------*/
-    
-    .desktop-icons {
-        -webkit-touch-callout: none;
-        -ms-touch-select: none;
-        align-content: flex-start;
-        align-items: flex-start;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 96%;
-        padding: 40px 0 0 0;
-        position: relative;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        width: 100%;
-    }
-    
-    
-    
-    .icon {
-        display: inline-block;
-        image-rendering: pixelated;
-        touch-action: none;
-        margin-bottom: 25px;
-        margin-left: 25px;
-        padding: 5px;
-    }
-    
-    
-    .icon .icon-graphic {
-        display: block;
-        height: 32px;
-        margin: 0 auto;
-        width: 32px;
-    }
-    
-    .icon .icon-graphic .icon-graphic-img {
-        background-position: 50%;
-        background-repeat: no-repeat;
-        background-size: contain;
-        display: block;
-        height: 100%;
-        width: 100%;
-    }
-    
-    #calculator {
-        background: url('../images/app.gif');
-    }
-    
-    #trash {
-        background: url('../images/trash.gif');
-    }
-    
-    #chat {
-        background: url('../images/message.gif');
-    }
-    
-    .icon .icon-label {
-        display: block;
-        min-width: 80px;
-        text-align: center;
-        width: 100%;
-    }
-    
-    .icon .icon-label .icon-label-title {
-        border: 1px solid transparent;
-        color: #fff;
-        display: inline-block;
-        max-width: 80px;
-        padding: 2px 4px;
-        text-shadow: 1px 1px #111;
-        word-break: break-word;
-    }
-    
-    .icon .icon-graphic .icon-label {
-        background-position: 50%;
-        background-repeat: no-repeat;
-        background-size: contain;
-        display: block;
-        height: 100%;
-        width: 100%;
-    }
-    
-    
-    /*---------------icon-is-active-------------*/
-    
-    .icon-is-active {
-        display: inline-block;
-        image-rendering: pixelated;
-        touch-action: none;
-        margin-bottom: 25px;
-        margin-left: 25px;
-        padding: 5px;
-    }
-    
-    
-    .icon-is-active .icon-graphic {
-        display: block;
-        height: 32px;
-        margin: 0 auto;
-        width: 32px;
-        filter: brightness(.7) sepia(100%) hue-rotate(290deg) saturate(4);
-    }
-    
-    
-    
-    .icon-is-active .icon-graphic .icon-graphic-img {
-        background-position: 50%;
-        background-repeat: no-repeat;
-        background-size: contain;
-        display: block;
-        height: 100%;
-        width: 100%;
-    }
-    
-    .icon-is-active .icon-label {
-        display: block;
-        min-width: 80px;
-        text-align: center;
-        width: 100%;
-    }
-    
-    .icon-is-active .icon-label .icon-label-title {
-        display: inline-block;
-        max-width: 80px;
-        padding: 2px 4px;
-        text-shadow: 1px 1px #111;
-        word-break: break-word;
-    
-        background-color: #ee749d;
-        border: 1px dotted hsla(0,0%,100%,.4);
-        box-sizing: border-box;
-        color: #fff;
-    }
-    
-    .icon-is-active .icon-graphic .icon-label {
-        background-position: 50%;
-        background-repeat: no-repeat;
-        background-size: contain;
-        display: block;
-        height: 100%;
-        width: 100%;
-    }
-    
+}
 
-    /*--------------------------------------Windows---------------------------------------*/
+/*---------------default icon-------------*/
 
-    .window {
-        background-color: #d1d1d1;
-        border-color: hsla(0,0%,100%,.75) hsla(0,0%,7%,.85) hsla(0,0%,7%,.85) hsla(0,0%,100%,.75);
-        border-style: solid;
-        border-width: 2px;
-        display: flex;
-        flex-direction: column;
-        height: 250px;
-        left: 0;
-        position: absolute;
-        top: 0;
-        touch-action: none;
-        user-select: none;
-        width: 280px;
-    }
+.desktop-icons {
+    -webkit-touch-callout: none;
+    -ms-touch-select: none;
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 96%;
+    padding: 40px 0 0 0;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 100%;
     
-    .window.is-active .window-bar {
-        background-color: #c074df;
-    }
+}
+
+
+
+.icon {
+    display: inline-block;
+    image-rendering: pixelated;
+    touch-action: none;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    padding: 5px;
+}
+
+
+.icon .icon-graphic {
+    display: block;
+    height: 32px;
+    margin: 0 auto;
+    width: 32px;
+}
+
+.icon .icon-graphic .icon-graphic-img {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+#calculator {
+    background: url('../images/app.gif');
+}
+
+#trash {
+    background: url('../images/trash.gif');
+}
+
+#chat {
+    background: url('../images/message.gif');
+}
+
+.icon .icon-label {
+    display: block;
+    min-width: 80px;
+    text-align: center;
+    width: 100%;
+}
+
+.icon .icon-label .icon-label-title {
+    border: 1px solid transparent;
+    color: #fff;
+    display: inline-block;
+    max-width: 80px;
+    padding: 2px 4px;
+    text-shadow: 1px 1px #111;
+    word-break: break-word;
+}
+
+.icon .icon-graphic .icon-label {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*---------------icon-is-active-------------*/
+
+.icon-is-active {
+    display: inline-block;
+    image-rendering: pixelated;
+    touch-action: none;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    padding: 5px;
+}
+
+
+.icon-is-active .icon-graphic {
+    display: block;
+    height: 32px;
+    margin: 0 auto;
+    width: 32px;
+    filter: brightness(.7) sepia(100%) hue-rotate(290deg) saturate(4);
+}
+
+
+
+.icon-is-active .icon-graphic .icon-graphic-img {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.icon-is-active .icon-label {
+    display: block;
+    min-width: 80px;
+    text-align: center;
+    width: 100%;
+}
+
+.icon-is-active .icon-label .icon-label-title {
+    display: inline-block;
+    max-width: 80px;
+    padding: 2px 4px;
+    text-shadow: 1px 1px #111;
+    word-break: break-word;
+
+    background-color: #ee749d;
+    border: 1px dotted hsla(0, 0%, 100%, .4);
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.icon-is-active .icon-graphic .icon-label {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*--------------------------------------Windows---------------------------------------*/
+
+.window {
+    background-color: #d1d1d1;
+    border-color: hsla(0, 0%, 100%, .75) hsla(0, 0%, 7%, .85) hsla(0, 0%, 7%, .85) hsla(0, 0%, 100%, .75);
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    touch-action: none;
+    user-select: none;
+    width: 280px;
+}
+
+.window.is-active .window-bar {
+    background-color: #c074df;
+}
+
+.window .window-bar {
+    background-color: #aaa;
+    height: 24px;
+    padding: 2px 3px;
+    width: 100%;
+}
+
+.window .window-bar .window-bar-container {
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.window .window-bar .window-bar-container .window-bar-handle {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    touch-action: none;
+    user-select: none;
+    width: 100%;
+    z-index: 0;
+}
+
+.window .window-bar .window-bar-container .window-bar-icon {
+    display: table-cell;
+    padding: 0 3px 0 2px;
+    vertical-align: middle;
+}
+
+.window .window-bar .window-bar-container .window-bar-icon .icon-graphic-img {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 15px;
+    width: 15px;
+}
+
+.window .window-bar .window-bar-container .window-bar-label {
+    color: #d1d1d1;
+    display: table-cell;
+    padding-left: 3px;
+    vertical-align: middle;
+    width: 100%;
     
-    .window .window-bar {
-        background-color: #aaa;
-        height: 24px;
-        padding: 2px 3px;
-        width: 100%;
-    }
-    
-    .window .window-bar .window-bar-container {
-        display: table;
-        height: 100%;
-        position: relative;
-        width: 100%;
-    }
-    
-    .window .window-bar .window-bar-container .window-bar-handle {
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        touch-action: none;
-        user-select: none;
-        width: 100%;
-        z-index: 0;
-    }
-    
-    .window .window-bar .window-bar-container .window-bar-icon {
-        display: table-cell;
-        padding: 0 3px 0 2px;
-        vertical-align: middle;
-    }
+}
 
-    .window .window-bar .window-bar-container .window-bar-icon .icon-graphic-img {
-        background-position: 50%;
-        background-repeat: no-repeat;
-        background-size: contain;
-        display: block;
-        height: 15px;
-        width: 15px;
-    }
-    
-    .window .window-bar .window-bar-container .window-bar-label {
-        color: #d1d1d1;
-        display: table-cell;
-        padding-left: 3px;
-        vertical-align: middle;
-        width: 100%;
-    }
+.window.is-active .window-bar .window-bar-label {
+    color: #fff !important;
+}
 
-    .window .window-bar .window-bar-container .window-bar-controls {
-        color: #111;
-        display: table-cell;
-        position: relative;
-        vertical-align: middle;
-        z-index: 1;
-    }
+.window .window-bar .window-bar-container .window-bar-controls {
+    color: #111;
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+    z-index: 1;
+}
 
-    .window .window-bar .window-bar-container .window-bar-controls .window-bar-controls-btn {
-        background-color: #d1d1d1;
-        border-color: hsla(0,0%,100%,.75) hsla(0,0%,7%,.85) hsla(0,0%,7%,.85) hsla(0,0%,100%,.75);
-        border-style: solid;
-        border-width: 2px;
-        cursor: default;
-        height: 18px;
-        position: relative;
-        text-align: center;
-        width: 18px;
-    }
+.window .window-bar .window-bar-container .window-bar-controls .window-bar-controls-btn {
+    background-color: #d1d1d1;
+    border-color: hsla(0, 0%, 100%, .75) hsla(0, 0%, 7%, .85) hsla(0, 0%, 7%, .85) hsla(0, 0%, 100%, .75);
+    border-style: solid;
+    border-width: 2px;
+    cursor: default;
+    height: 18px;
+    position: relative;
+    text-align: center;
+    width: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11px;
+}
 
-    .window .window-bar .window-bar-container .window-bar-controls .window-bar-controls-btn .window-bar-controls-btn-hotspot {
-        height: calc(100% + 12px);
-        left: -6px;
-        position: absolute;
-        top: -6px;
-        width: calc(100% + 12px);
-    }
 
-    .window .window-content {
-        height: calc(100% - 24px);
-        position: absolute;
-        top: 24px;
-        width: 100%;
-    }
+.window .window-bar .window-bar-container .window-bar-controls .window-bar-controls-btn .window-bar-controls-btn-hotspot {
+    height: calc(100% + 12px);
+    left: -6px;
+    position: absolute;
+    top: -6px;
+    width: calc(100% + 12px);
+}
 
-    .window .window-content iframe[data-style=inset] {
+.window .window-content {
+    height: calc(100% - 24px);
+    position: absolute;
+    top: 24px;
+    width: 100%;
+}
+
+/* .window .window-content iframe[data-style=inset] {
         border-color: hsla(0,0%,7%,.85) hsla(0,0%,100%,.75) hsla(0,0%,100%,.75) hsla(0,0%,7%,.85);
         border-style: solid;
         border-width: 2px;
-    }
+    } */
 
-    .window .window-content iframe {
-        background: transparent;
-        border: 0;
-        height: 100%;
-        width: 100%;
-    }
+.window .window-content iframe {
+    background: transparent;
+    border: 0;
+    height: 100%;
+    width: 100%;
+}
 
-    .window-program {
-        background-color: #d1d1d1;
-        background: #d1d1d1;
-    }
+.window-border {
+    border-color: hsla(0, 0%, 7%, .85) hsla(0, 0%, 100%, .75) hsla(0, 0%, 100%, .75) hsla(0, 0%, 7%, .85);
+    border-style: solid;
+    border-width: 2px;
+    background: transparent;
+    height: 100%;
+    width: 100%;
 
-    .window-program {
-        -webkit-touch-callout: none;
-        -ms-touch-select: none;
-        background-color: #d1d1d1;
-        background: #d1d1d1;
-        display: block;
-        height: 100%;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        width: 100%;
-        
-    }
 
-    /* .window-program #window-bg-white {
+
+}
+
+.window-program {
+    background-color: #d1d1d1;
+    background: #d1d1d1;
+}
+
+.window-program {
+    -webkit-touch-callout: none;
+    -ms-touch-select: none;
+    background-color: #d1d1d1;
+    background: #d1d1d1;
+    display: block;
+    height: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 100%;
+
+}
+
+/* .window-program #window-bg-white {
         background: #fff;
 
     } */
 
-    /* .window-program .window-bg {
+/* .window-program .window-bg {
         display: block;
         height: 100%;
         position: fixed;
@@ -400,32 +424,34 @@ div {
         
     } */
 
-    .window-program .window-container {
-        height: 100%;
-        position: relative;
-        touch-action: auto;
-        width: 100%;
-        background: #fff;
-    }
+.window-program .window-container {
+    height: 100%;
+    position: relative;
+    touch-action: auto;
+    width: 100%;
+    background: #fff;
+}
 
-    .window-program .window-container .notepad .text-container {
-        padding: 5px;
-    }
+.window-program .window-container .notepad .text-container {
+    padding: 5px;
+}
 
-    .window-program .window-container .notepad .text-container div, .window-program .window-container .notepad .text-container p, .window-program .window-container .notepad .text-container span {
-        user-select: text;
-    }
+.window-program .window-container .notepad .text-container div,
+.window-program .window-container .notepad .text-container p,
+.window-program .window-container .notepad .text-container span {
+    user-select: text;
+}
 
-    .window .window-resizer {
-        bottom: -2px;
-        height: 10px;
-        opacity: 0;
-        position: absolute;
-        right: -2px;
-        width: 10px;
-    }
+.window .window-resizer {
+    bottom: -2px;
+    height: 10px;
+    opacity: 0;
+    position: absolute;
+    right: -2px;
+    width: 10px;
+}
 
-    /*--------------------------------------Menubar---------------------------------------*/
+/*--------------------------------------Menubar---------------------------------------*/
 
 
 
@@ -433,8 +459,8 @@ div {
 
 .menu-bar {
     background-color: #d1d1d1;
-    border-left: 2px solid hsla(0,0%,100%,.75);
-    border-top: 2px solid hsla(0,0%,100%,.75);
+    border-left: 2px solid hsla(0, 0%, 100%, .75);
+    border-top: 2px solid hsla(0, 0%, 100%, .75);
     bottom: 0;
     height: 4%;
     position: fixed;
@@ -470,7 +496,7 @@ div {
 }
 
 .menu-bar .menu-bar-container .menu-bar-items .menu-bar-item.menu-bar-item-start .menu-start {
-    border-color: hsla(0,0%,100%,.75) hsla(0,0%,7%,.85) hsla(0,0%,7%,.85) hsla(0,0%,100%,.75);
+    border-color: hsla(0, 0%, 100%, .75) hsla(0, 0%, 7%, .85) hsla(0, 0%, 7%, .85) hsla(0, 0%, 100%, .75);
     border-style: solid;
     border-width: 2px;
     height: 32px;
@@ -518,7 +544,7 @@ div {
 }
 
 .menu-bar .menu-bar-container .menu-bar-items .menu-bar-item.menu-bar-item-programs .menu-programs .menu-program .menu-program-container {
-    border-color: hsla(0,0%,100%,.75) hsla(0,0%,7%,.85) hsla(0,0%,7%,.85) hsla(0,0%,100%,.75);
+    border-color: hsla(0, 0%, 100%, .75) hsla(0, 0%, 7%, .85) hsla(0, 0%, 7%, .85) hsla(0, 0%, 100%, .75);
     border-style: solid;
     border-width: 2px;
     display: table;
@@ -541,7 +567,7 @@ div {
     display: block;
     height: 15px;
     width: 15px;
-    
+
 }
 
 .menu-bar .menu-bar-container .menu-bar-items .menu-bar-item.menu-bar-item-programs .menu-programs .menu-program .menu-program-container .program-label {
@@ -565,7 +591,7 @@ div {
 }
 
 .menu-bar .menu-bar-container .menu-bar-items .menu-bar-item.menu-bar-item-tasks .menu-bar-tasks {
-    border-color: hsla(0,0%,7%,.4) hsla(0,0%,100%,.75) hsla(0,0%,100%,.75) hsla(0,0%,7%,.4);
+    border-color: hsla(0, 0%, 7%, .4) hsla(0, 0%, 100%, .75) hsla(0, 0%, 100%, .75) hsla(0, 0%, 7%, .4);
     border-style: solid;
     border-width: 1px;
     float: left;
@@ -591,27 +617,27 @@ div {
 /*-------------menu start is active---------------*/
 
 .menu-bar .menu-bar-container .menu-bar-items .menu-bar-item.menu-bar-item-start .menu-start.is-active {
-    border-color: hsla(0,0%,7%,.85) hsla(0,0%,100%,.75) hsla(0,0%,100%,.75) hsla(0,0%,7%,.85);
+    border-color: hsla(0, 0%, 7%, .85) hsla(0, 0%, 100%, .75) hsla(0, 0%, 100%, .75) hsla(0, 0%, 7%, .85);
     border-style: solid;
     border-width: 2px;
 }
 
 .menu-bar .menu-bar-container .menu-bar-items .menu-bar-item.menu-bar-item-start .menu-start {
-        border-color: hsla(0,0%,100%,.75) hsla(0,0%,7%,.85) hsla(0,0%,7%,.85) hsla(0,0%,100%,.75);
-        border-style: solid;
-        border-width: 2px;
-        height: 31px;
-        text-align: center;
-        touch-action: manipulation;
-        width: 74px;
-    }
+    border-color: hsla(0, 0%, 100%, .75) hsla(0, 0%, 7%, .85) hsla(0, 0%, 7%, .85) hsla(0, 0%, 100%, .75);
+    border-style: solid;
+    border-width: 2px;
+    height: 31px;
+    text-align: center;
+    touch-action: manipulation;
+    width: 74px;
+}
 
 
 /*-------------start menu---------------*/
 
 .menu-bar .start-menu {
     background-color: #d1d1d1;
-    border-color: hsla(0,0%,100%,.75) hsla(0,0%,7%,.85) hsla(0,0%,7%,.85) hsla(0,0%,100%,.75);
+    border-color: hsla(0, 0%, 100%, .75) hsla(0, 0%, 7%, .85) hsla(0, 0%, 7%, .85) hsla(0, 0%, 100%, .75);
     border-style: solid;
     border-width: 2px;
     bottom: 96%;
@@ -695,7 +721,7 @@ div {
 }
 
 .menu-bar .start-menu .menu-items ul li.spacer {
-    border-color: hsla(0,0%,7%,.3) hsla(0,0%,100%,.75) hsla(0,0%,100%,.75) hsla(0,0%,7%,.3);
+    border-color: hsla(0, 0%, 7%, .3) hsla(0, 0%, 100%, .75) hsla(0, 0%, 100%, .75) hsla(0, 0%, 7%, .3);
     border-style: solid;
     border-width: 1px;
     height: 1px;
