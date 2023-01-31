@@ -1,11 +1,45 @@
 import React from 'react';
+import { useState } from 'react';
 import '../css/style.css';
 
 function Windows() {
 
+    const [diffX, setDiffX] = useState(0);
+    const [diffY, setDiffY] = useState(0);
+    const [dragging, setDragging] = useState(false);
+    const [styles, setStyles] = useState({});
+
+    const DragStart = (e) => {
+        
+        console.log(e.screenX)
+        setDiffX(e.screenX - e.currentTarget.getBoundingClientRect().left)
+        setDiffY(e.screenY - e.currentTarget.getBoundingClientRect().top)
+        setDragging(true);
+
+        
+    };
+
+    const DragEnd = () => {
+        setDragging(false);
+    };
+
+    const Dragging = (e) => {
+        
+        if(dragging){
+            var left = e.screenX - diffX;
+            var top = e.screenY - diffY;
+            setStyles({left: left,
+                     top: top})
+        }
+        console.log(dragging)
+       
+    };
+
+
+
     return (
-        <div className='window is-active'>
-            <div className='window-bar'>
+        <div className='window is-active' style={styles}  >
+            <div className='window-bar' onMouseDown={DragStart} onMouseMove={Dragging} onMouseUp={DragEnd} >
                 <div className='window-bar-container'>
                     <div className='window-bar-handle'></div>
                     <div className='window-bar-icon'>

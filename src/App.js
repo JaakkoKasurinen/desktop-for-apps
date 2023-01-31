@@ -1,4 +1,4 @@
-import './css/App.css';
+import './css/style.css';
 import Desktop from './desktop/Desktop';
 
 function App() {

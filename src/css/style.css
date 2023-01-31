@@ -2,7 +2,7 @@
 
 * {
     box-sizing: border-box;
-    cursor: url(../images/folder.gif), auto !important;
+    /* cursor: url(../images/folder.gif), auto !important; */
     margin: 0;
     padding: 0;
 }
