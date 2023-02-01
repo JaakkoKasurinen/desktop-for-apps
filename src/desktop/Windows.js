@@ -1,13 +1,15 @@
 import React from 'react';
 import Draggable from 'react-draggable';
-
 import '../css/style.css';
 
 function Windows() {
 
+
+
     return (
         <Draggable
         handle='.window-bar'>
+
         <div className='window is-active'  >
             
             <div className='window-bar'  >
