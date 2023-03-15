@@ -163,6 +163,10 @@ div {
     background: url('../images/message.gif');
 }
 
+#readme {
+    background: url('../images/file-text.gif');
+}
+
 .icon .icon-label {
     display: block;
     min-width: 80px;
@@ -174,7 +178,7 @@ div {
     border: 1px solid transparent;
     color: #fff;
     display: inline-block;
-    max-width: 80px;
+    max-width: 90px;
     padding: 2px 4px;
     text-shadow: 1px 1px #111;
     word-break: break-word;
@@ -230,7 +234,7 @@ div {
 
 .icon-is-active .icon-label .icon-label-title {
     display: inline-block;
-    max-width: 80px;
+    max-width: 90px;
     padding: 2px 4px;
     text-shadow: 1px 1px #111;
     word-break: break-word;
@@ -442,14 +446,7 @@ div {
     user-select: text;
 }
 
-/* .window .window-resizer {
-    bottom: -2px;
-    height: 10px;
-    opacity: 0;
-    position: absolute;
-    right: -2px;
-    width: 10px;
-} */
+/* cd  */
 
 .react-resizable-handle.react-resizable-handle-se {
     bottom: -2px;

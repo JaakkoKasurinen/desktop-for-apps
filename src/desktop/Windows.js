@@ -5,14 +5,15 @@ import { useRef } from "react";
 import useDimensions from "react-cool-dimensions";
 import '../css/style.css';
 import { Resizable, ResizableBox } from 'react-resizable';
+import ReadmeWindow from './Window/ReadmeWindow';
 
 function Windows() {
 
     const [style, setStyle] = useState({width: 200, height: 200});
 
-   const onResize = (event, {element, size, handle}) => {
-        setStyle({width: style.width, height: style.height});
-      };
+//    const onResize = (event, {element, size, handle}) => {
+//         setStyle({width: style.width, height: style.height});
+//       };
 
 
     return (
@@ -25,10 +26,10 @@ function Windows() {
         minConstraints={[150, 150]}
         >
 
-        
+        <ReadmeWindow/>
 
 
-     <div className='window is-active'>
+      {/* <div className='window is-active'>
             
             <div className='window-bar'  >
                 <div className='window-bar-container'>
@@ -59,12 +60,12 @@ function Windows() {
                     </div>
                 </div>
             </div>
-            {/* <div className='window-resizer'></div> */}
+          
             <div className='window-content'>
             <div className='window-border'>
                 <div className='window-program'>
                     
-                        {/* <div className='window-bg'></div> */}
+                        
                         <div className='window-container'>
                             <div className='notepad'>
                                 <p>Hi! My width is</p>
@@ -74,7 +75,7 @@ function Windows() {
                 </div>
             </div>
             
-        </div>
+    </div>  */}
 
         
        
